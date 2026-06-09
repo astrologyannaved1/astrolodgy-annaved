@@ -18,15 +18,66 @@
         .quote-author { text-align: center; font-size: 0.8rem; color: #9C8A76; margin-top: 6px; }
         .anchor-nav { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; padding: 16px 0; }
         .anchor-nav a { text-decoration: none; font-weight: 500; color: #8B6946; }
-        .hero { display: flex; flex-wrap: wrap; align-items: center; gap: 48px; margin-top: 20px; }
-        .hero-content { flex: 1.2; }
-        .hero-content h1 { font-size: 4rem; margin-bottom: 20px; color: #3E3530; }
+       css
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 32px;
+    margin: 40px 0 60px;
+}
+        .hero-content {
+    width: 100%;
+}
+        .hero-content h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #3E3530;
+}
         .hero-tagline { font-size: 0.85rem; text-transform: uppercase; color: #9B7B5C; margin-bottom: 32px; border-left: 2px solid #D4B88C; padding-left: 18px; }
         .btn-group { display: flex; flex-wrap: wrap; gap: 18px; }
         .btn { display: inline-flex; align-items: center; gap: 12px; padding: 14px 32px; border-radius: 60px; text-decoration: none; background: white; border: 1px solid #DCC9B0; color: #4C3A2B; font-weight: 600; }
         .btn-primary { background: #D9C6AA; border: none; }
-        .hero-image { flex: 0.9; background: linear-gradient(135deg, #F3EDE4, #EADDCB); border-radius: 48px; padding: 40px 28px; text-align: center; }
-        .yantra-img { width: 100%; max-width: 280px; margin: 0 auto; display: block; border-radius: 16px; }
+        .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #F3EDE4, #EADDCB);
+    border-radius: 48px;
+    padding: 32px 20px;
+    max-width: 340px;
+    width: 90%;
+    margin: 0 auto;
+}
+        .yantra-img {
+    max-width: 240px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        /* Адаптация для телефонов */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+    .hero-image {
+        padding: 20px;
+        max-width: 280px;
+    }
+    .yantra-img {
+        max-width: 180px;
+    }
+    .hero-tagline {
+        font-size: 0.75rem;
+        text-align: center;
+        border-left: none;
+        padding-left: 0;
+    }
+}
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; margin-top: 20px; }
         .service-card { background: #FFFFFFE6; padding: 32px 24px; border-radius: 32px; border: 1px solid #F2EADF; text-align: center; }
         .service-card .card-icon { font-size: 2.6rem; margin-bottom: 20px; color: #C7A26B; }
@@ -82,19 +133,23 @@
 <main>
     <div class="container" style="padding-top: 20px;">
         <div class="hero">
-            <div class="hero-content">
-                <h1>Астро и <br> <span class="highlight">Атмаполезности</span></h1>
-                <div class="hero-tagline">Астрология как инструмент самопознания и развития.<br>Гармония жизни через призму Джйотиш.<br>Потенциал, кармические задачи, планеты и ваш путь.</div>
-                <div class="btn-group">
-                    <a href="#booking" class="btn btn-primary"><i class="fas fa-calendar-alt"></i> Запись на консультацию</a>
-                    <a href="https://t.me/AstrovedAnnaA" target="_blank" class="btn"><i class="fab fa-telegram"></i> Telegram</a>
-                    <a href="https://max.ru/join/Y_lSPbGZfM2ZkGiBObOXZlKks_rYtOSAfijfcPr6oeY" target="_blank" class="btn"><i class="fas fa-link"></i> Канал MAX</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img class="yantra-img" src="yantra.png" alt="Шри Янтра">
-            </div>
+    <div class="hero-content">
+        <h1>Астро и <br> <span class="highlight">Атмаполезности</span></h1>
+        <div class="hero-tagline">
+            Астрология как инструмент самопознания и развития.<br>
+            Гармония жизни через призму Джйотиш.<br>
+            Потенциал, кармические задачи, планеты и ваш путь.
         </div>
+        <div class="btn-group">
+            <a href="#booking" class="btn btn-primary"><i class="fas fa-calendar-alt"></i> Запись на консультацию</a>
+            <a href="https://t.me/AstrovedAnnaA" target="_blank" class="btn"><i class="fab fa-telegram"></i> Telegram</a>
+            <a href="https://max.ru/join/Y_lSPbGZfM2ZkGiBObOXZlKks_rYtOSAfijfcPr6oeY" target="_blank" class="btn"><i class="fas fa-link"></i> Канал MAX</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img class="yantra-img" src="yantra.png" alt="Шри Янтра">
+    </div>
+</div>
     </div>
 
     <div class="section" id="services">
