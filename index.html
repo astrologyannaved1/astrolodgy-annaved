@@ -2,13 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Астро и Атмаполезности | Ведическая астрология</title>
-    <meta name="description" content="Ведическая астрология от Анны Акимовой. Консультации, натальные карты, совместимость, Мухурта, Прашна.">
-    <meta name="keywords" content="ведическая астрология, Джйотиш, натальная карта">
-    <meta name="author" content="Анна Акимова">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -16,21 +12,21 @@
         .container { max-width: 1280px; margin: 0 auto; padding: 0 28px; }
         h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; }
         h2 { font-size: 2.8rem; margin-bottom: 1.5rem; border-left: 5px solid #D4B88C; padding-left: 1.2rem; }
-        .section { padding: 80px 0; border-bottom: 1px solid rgba(200, 180, 150, 0.25); }
-        .top-quote { padding: 24px 0 12px; border-bottom: 1px solid #E8E0D5; background: #FCF9F4; }
-        .quote-text { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-style: italic; color: #6A5E51; text-align: center; max-width: 800px; margin: 0 auto; }
+        .section { padding: 80px 0; border-bottom: 1px solid rgba(200,180,150,0.25); }
+        .top-quote { padding: 24px 0 12px; border-bottom: 1px solid #E8E0D5; }
+        .quote-text { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-style: italic; color: #6A5E51; text-align: center; }
         .quote-author { text-align: center; font-size: 0.8rem; color: #9C8A76; margin-top: 6px; }
-        .anchor-nav { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; padding: 16px 0 8px; background: #FCF9F4; }
+        .anchor-nav { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; padding: 16px 0; }
         .anchor-nav a { text-decoration: none; font-weight: 500; color: #8B6946; }
         .hero { display: flex; flex-wrap: wrap; align-items: center; gap: 48px; margin-top: 20px; }
         .hero-content { flex: 1.2; }
         .hero-badge { display: inline-block; background: #EFE5D9; padding: 6px 14px; border-radius: 40px; font-size: 0.8rem; color: #8B6946; margin-bottom: 20px; }
         .hero-content h1 { font-size: 4rem; margin-bottom: 20px; color: #3E3530; }
-        .hero-tagline { font-size: 1.05rem; text-transform: uppercase; color: #9B7B5C; margin-bottom: 32px; border-left: 2px solid #D4B88C; padding-left: 18px; }
+        .hero-tagline { font-size: 1rem; text-transform: uppercase; color: #9B7B5C; margin-bottom: 32px; border-left: 2px solid #D4B88C; padding-left: 18px; }
         .btn-group { display: flex; flex-wrap: wrap; gap: 18px; }
-        .btn { display: inline-flex; align-items: center; gap: 12px; padding: 14px 32px; border-radius: 60px; text-decoration: none; background: white; border: 1px solid #DCC9B0; color: #4C3A2B; }
+        .btn { display: inline-flex; align-items: center; gap: 12px; padding: 14px 32px; border-radius: 60px; text-decoration: none; background: white; border: 1px solid #DCC9B0; color: #4C3A2B; font-weight: 600; }
         .btn-primary { background: #D9C6AA; border: none; }
-        .hero-image { flex: 0.9; background: linear-gradient(135deg, #F3EDE4, #EADDCB); border-radius: 48px; padding: 40px 28px; text-align: center; min-height: 360px; }
+        .hero-image { flex: 0.9; background: linear-gradient(135deg, #F3EDE4, #EADDCB); border-radius: 48px; padding: 40px 28px; text-align: center; }
         .yantra-img { width: 100%; max-width: 280px; margin: 0 auto; display: block; border-radius: 16px; }
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; margin-top: 20px; }
         .service-card { background: #FFFFFFE6; padding: 32px 24px; border-radius: 32px; border: 1px solid #F2EADF; text-align: center; }
@@ -48,7 +44,6 @@
         .news-grid { display: flex; flex-direction: column; gap: 24px; }
         .news-item { background: #FEFAF5; border-radius: 24px; padding: 24px 28px; border-left: 6px solid #DECFAD; position: relative; cursor: pointer; }
         .news-actions { position: absolute; top: 20px; right: 24px; display: flex; gap: 12px; }
-        .news-actions button { background: rgba(255,255,240,0.9); border: none; border-radius: 30px; width: 32px; height: 32px; cursor: pointer; }
         .contact-wrap { display: flex; flex-wrap: wrap; gap: 48px; justify-content: space-between; }
         .contact-info { flex: 1; }
         .social-buttons { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 28px; }
@@ -110,35 +105,34 @@
     <div class="section" id="services">
         <div class="container"><h2>Темы консультаций & услуги</h2><div class="services-grid">
             <div class="service-card"><i class="fas fa-star card-icon"></i><h3>Натальная карта</h3><p>Глубокий разбор карты рождения, точки ограничений и способы личностного развития.</p></div>
-            <div class="service-card"><i class="fas fa-leaf card-icon"></i><h3>Особенности здоровья</h3><p>Аюрведа + планеты: потенциал здоровья и объяснение с позиции натальной карты.</p></div>
+            <div class="service-card"><i class="fas fa-leaf card-icon"></i><h3>Особенности здоровья</h3><p>Аюрведа + планеты: потенциал здоровья.</p></div>
             <div class="service-card"><i class="fas fa-hand-peace card-icon"></i><h3>Денежный путь</h3><p>Анализ домов богатства, периодов (даш) и усиление финансовой энергии.</p></div>
-            <div class="service-card"><i class="fas fa-heart card-icon"></i><h3>Совместимость и личная жизнь</h3><p>Парные отношения, кармические узы, благоприятные периоды для союза.</p></div>
-            <div class="service-card"><i class="fas fa-gem card-icon"></i><h3>Подбор камней и мантр</h3><p>Рекомендации ведических коррекций: самоцветы, ягьи, мантры.</p></div>
-            <div class="service-card"><i class="fas fa-calendar-check card-icon"></i><h3>Мухурта</h3><p>Подбор благоприятного времени для важных событий.</p></div>
-            <div class="service-card"><i class="fas fa-baby-carriage card-icon"></i><h3>Потенциал ребенка</h3><p>Детская карта: таланты, зоны роста, рекомендации для родителей.</p></div>
+            <div class="service-card"><i class="fas fa-heart card-icon"></i><h3>Совместимость и личная жизнь</h3><p>Парные отношения, кармические узы.</p></div>
+            <div class="service-card"><i class="fas fa-gem card-icon"></i><h3>Подбор камней и мантр</h3><p>Рекомендации ведических коррекций.</p></div>
+            <div class="service-card"><i class="fas fa-calendar-check card-icon"></i><h3>Мухурта</h3><p>Подбор благоприятного времени.</p></div>
+            <div class="service-card"><i class="fas fa-baby-carriage card-icon"></i><h3>Потенциал ребенка</h3><p>Детская карта: таланты, зоны роста.</p></div>
             <div class="service-card"><i class="fas fa-hourglass-half card-icon"></i><h3>Прашна</h3><p>Метод астрологии для получения ответа на конкретный вопрос.</p></div>
         </div></div>
     </div>
 
     <div class="section" id="about">
         <div class="container about-grid">
-            <div class="about-text"><h2>Обо мне</h2><p>Здравствуйте, я Анна — практик ведической астрологии (Джйотиш) с 4-летним опытом и инициированный Атма-крийя йог. Изучала астрологию в традициях: "Парашары, Джаймини, Таджика, Нади-астрологии, К.Н.Рао".</p><p>Мои консультации опираются на классические тексты: "Брихат Парашара Хора Шастра", "Джаймини сутры".</p><div class="about-sign">— Ведический астролог, Анна Акимова.</div></div>
+            <div class="about-text"><h2>Обо мне</h2><p>Здравствуйте, я Анна — практик ведической астрологии (Джйотиш) с 4-летним опытом и инициированный Атма-крийя йог. Изучала астрологию в традициях: "Парашары, Джаймини, Таджика, Нади-астрологии, К.Н.Рао".</p><p>Мои консультации опираются на классические тексты.</p><div class="about-sign">— Ведический астролог, Анна Акимова.</div></div>
             <div style="text-align:center;"><i class="fas fa-lotus" style="font-size: 6rem; color: #DBC7A8;"></i><div style="background:#F0E5D9; border-radius:100px; padding:8px 20px; margin-top:20px;">ॐ गं गणपतये नमः</div></div>
         </div>
     </div>
 
     <div class="section" id="great-people">
         <div class="container"><h2><i class="fas fa-globe"></i> Астрология в жизни великих</h2><div class="great-people-grid">
-            <div class="great-card"><h3>А.Л. Чижевский</h3><p>Советский учёный, биофизик, основоположник космического естествознания.</p><div class="quote">«Кто отрицает влияние звёзд, тот отрицает мудрость и противоречит самому явному опыту».</div></div>
-            <div class="great-card"><h3>Тони Нейдер</h3><p>Доктор наук, профессор. Внёс вклад в изучение связи физиологии человека с ведической астрологией (Джйотиш).</p></div>
-            <div class="great-card"><h3>К.Г. Юнг</h3><p>Основатель аналитической психологии. Рассматривал астрологию как архетипическую карту души.</p><div class="quote">«Астрологическая карта может дать полную картину характера личности… выявить психологические конфликты и задачи души».</div></div>
-            <div class="great-card"><h3>Альберт Эйнштейн</h3><p>Физик-теоретик, лауреат Нобелевской премии.</p><div class="quote">«Астрология — самостоятельная наука, очень многое объясняющая. Знакомство с нею поучительно, и я неоднократно с пользой для себя к ней обращался».</div></div>
+            <div class="great-card"><h3>А.Л. Чижевский</h3><p>Советский учёный, биофизик.</p><div class="quote">«Кто отрицает влияние звёзд, тот отрицает мудрость».</div></div>
+            <div class="great-card"><h3>К.Г. Юнг</h3><p>Основатель аналитической психологии.</p><div class="quote">«Астрологическая карта может дать полную картину характера личности».</div></div>
+            <div class="great-card"><h3>Альберт Эйнштейн</h3><p>Физик-теоретик.</p><div class="quote">«Астрология — самостоятельная наука, и я неоднократно к ней обращался».</div></div>
         </div></div>
     </div>
 
     <div class="section" id="news"><div class="container"><div class="news-header"><h2><i class="fas fa-newspaper"></i> Новости и эфиры</h2><button id="addNewsBtn" class="admin-news-btn"><i class="fas fa-plus"></i> Добавить новость</button></div><div class="news-grid" id="newsContainer"></div></div></div>
 
-    <div class="section" id="reviews"><div class="container"><h2><i class="fas fa-comment-dots"></i> Отзывы клиентов</h2><div class="reviews-grid"><div class="service-card"><i class="fas fa-star" style="color:#D4B88C;"></i><p>“Анна помогла разобраться в кармических задачах.”</p><strong>— Елена</strong></div><div class="service-card"><i class="fas fa-star" style="color:#D4B88C;"></i><p>“Благодаря Мухурте выбрали идеальную дату свадьбы.”</p><strong>— Сергей и Мария</strong></div><div class="service-card"><i class="fas fa-star" style="color:#D4B88C;"></i><p>“Разбор натальной карты превзошёл ожидания.”</p><strong>— Татьяна</strong></div></div></div></div>
+    <div class="section" id="reviews"><div class="container"><h2><i class="fas fa-comment-dots"></i> Отзывы клиентов</h2><div class="reviews-grid"><div class="service-card"><i class="fas fa-star" style="color:#D4B88C;"></i><p>“Анна помогла разобраться в кармических задачах.”</p><strong>— Елена</strong></div><div class="service-card"><i class="fas fa-star" style="color:#D4B88C;"></i><p>“Благодаря Мухурте выбрали идеальную дату.”</p><strong>— Сергей и Мария</strong></div><div class="service-card"><i class="fas fa-star" style="color:#D4B88C;"></i><p>“Разбор натальной карты превзошёл ожидания.”</p><strong>— Татьяна</strong></div></div></div></div>
 
     <div class="section" id="contact"><div class="container contact-wrap"><div class="contact-info"><h2>Связь & соцсети</h2><div class="social-buttons"><a href="https://t.me/AstrovedAnnaA" class="telegram-btn" target="_blank"><i class="fab fa-telegram"></i> Telegram-канал</a><a href="https://max.ru/join/Y_lSPbGZfM2ZkGiBObOXZlKks_rYtOSAfijfcPr6oeY" class="max-btn" target="_blank"><i class="fas fa-microphone-alt"></i> Канал MAX</a></div><p><i class="fas fa-clock"></i> Длительность: 75–90 мин<br><i class="fas fa-comment-dollar"></i> Стоимость уточняется при записи</p><a href="https://t.me/share/url?url=https://ваш-сайт.ру&text=Астрология%20как%20инструмент%20самопознания" target="_blank" class="share-btn"><i class="fab fa-telegram"></i> Поделиться</a></div>
         <div class="contact-info" id="booking"><h2><i class="fas fa-pen-alt"></i> Запись на приём</h2><div class="booking-card"><form id="bookingForm"><div class="form-group"><label>Ваше имя</label><input type="text" id="userName" required></div><div class="form-group"><label>Telegram</label><input type="text" id="userContact" placeholder="@username или +7..." required></div><div class="checkbox-group"><input type="checkbox" id="consentCheckbox" required><label>Согласие на обработку персональных данных (152-ФЗ)</label></div><button type="submit" class="btn-submit">Отправить заявку ➤</button><div id="formMessage" style="margin-top:15px;"></div></form></div>
@@ -151,94 +145,90 @@
 <a href="https://t.me/AstrovedAnnaA" class="floating-telegram" target="_blank"><i class="fab fa-telegram"></i></a>
 
 <script>
-    // ========== НАСТРОЙКИ TELEGRAM (замените на свои) ==========
+    // ========== ВСТАВЬТЕ СВОИ ДАННЫЕ ЗДЕСЬ ==========
     const BOT_TOKEN = '8797729463:AAFezQNnDeUJDaGBvK0S0G9IWm059iPs1ns';   // Замените на токен от @BotFather
-    const CHAT_ID = '1651374624';       // Замените на ваш Chat ID (цифры)
-    // ============================================================
+    const CHAT_ID = '1651374624';   // Замените на ваш Chat ID (цифры)
+    // =============================================
 
-    // Отправка заявок в Telegram
     async function sendToTelegram(name, contact) {
-        const text = `🔮 НОВАЯ ЗАЯВКА НА КОНСУЛЬТАЦИЮ 🔮\n\nИмя: ${name}\nКонтакт: ${contact}\n\nЗапрос: Запись к Анне (Астро и Атмаполезности)`;
+        const text = `🔮 НОВАЯ ЗАЯВКА НА КОНСУЛЬТАЦИЮ 🔮\n\nИмя: ${name}\nКонтакт: ${contact}`;
         try {
-            const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+            const res = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ chat_id: CHAT_ID, text: text })
             });
-            const result = await response.json();
-            return result.ok === true;
-        } catch(e) { console.error('Telegram error:', e); return false; }
+            const data = await res.json();
+            return data.ok === true;
+        } catch(e) { return false; }
     }
 
-    // Отправка подписки на дайджест в Telegram
-    async function sendSubscriptionToTelegram(email) {
-        const text = `📧 НОВАЯ ПОДПИСКА НА ДАЙДЖЕСТ 📧\n\nEmail: ${email}\n\nИсточник: Ведический дайджест (Астро и Атмаполезности)`;
+    async function sendSubscription(email) {
+        const text = `📧 НОВАЯ ПОДПИСКА НА ДАЙДЖЕСТ 📧\n\nEmail: ${email}`;
         try {
-            const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+            const res = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ chat_id: CHAT_ID, text: text })
             });
-            const result = await response.json();
-            return result.ok === true;
-        } catch(e) { console.error('Telegram error:', e); return false; }
+            const data = await res.json();
+            return data.ok === true;
+        } catch(e) { return false; }
     }
 
-    // ========== НОВОСТИ ==========
+    // Новости
     let newsData = [
-        { id: Date.now()+1, date: "19.04.26", title: "Акшая Тритья. Время начать.", description: "Самый мощный день в году.", link: "https://t.me/AstrovedAnnaA/223" },
-        { id: Date.now()+2, date: "20.04.26", title: "Время шагнуть", description: "Энергия обновления.", link: "https://t.me/AstrovedAnnaA/223" },
-        { id: Date.now()+3, date: "08.06.26", title: "Ом-Чантинг", description: "Практика способная подарить вдохновение и помочь другим!", link: "https://max.ru/join/Y_lSPbGZfM2ZkGiBObOXZlKks_rYtOSAfijfcPr6oeY" }
+        { id: Date.now()+1, date: "19.04.26", title: "Акшая Тритья", description: "Самый мощный день в году.", link: "https://t.me/AstrovedAnnaA/223" },
+        { id: Date.now()+2, date: "08.06.26", title: "Ом-Чантинг", description: "Практика способная подарить вдохновение!", link: "https://max.ru/join/Y_lSPbGZfM2ZkGiBObOXZlKks_rYtOSAfijfcPr6oeY" }
     ];
-    function renderNews(){const c=document.getElementById('newsContainer');if(!c)return;c.innerHTML='';newsData.forEach(i=>{const d=document.createElement('div');d.className='news-item';d.addEventListener('click',e=>{if(e.target.closest('.news-actions'))return;if(i.link)window.open(i.link,'_blank');});d.innerHTML=`<div class="news-actions"><button class="edit-news" data-id="${i.id}"><i class="fas fa-edit"></i></button><button class="delete-news" data-id="${i.id}"><i class="fas fa-trash-alt"></i></button></div><div class="news-date"><i class="far fa-calendar-alt"></i> ${i.date}</div><h4>${i.title}</h4><p>${i.description}</p>`;c.appendChild(d);});
-        document.querySelectorAll('.edit-news').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();const id=parseInt(b.dataset.id);const ni=newsData.find(n=>n.id===id);if(ni){let nd=prompt("Дата:",ni.date);let nt=prompt("Заголовок:",ni.title);let ndesc=prompt("Описание:",ni.description);let nlk=prompt("Ссылка:",ni.link);if(nd)ni.date=nd;if(nt)ni.title=nt;if(ndesc)ni.description=ndesc;if(nlk!==null)ni.link=nlk;renderNews();}}));
-        document.querySelectorAll('.delete-news').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();const id=parseInt(b.dataset.id);if(confirm("Удалить?")){newsData=newsData.filter(n=>n.id!==id);renderNews();}}));
+    function renderNews() {
+        const c = document.getElementById('newsContainer');
+        if(!c) return;
+        c.innerHTML = '';
+        newsData.forEach(i => {
+            const d = document.createElement('div');
+            d.className = 'news-item';
+            d.addEventListener('click', e => { if(e.target.closest('.news-actions')) return; if(i.link) window.open(i.link,'_blank'); });
+            d.innerHTML = `<div class="news-actions"><button class="edit-news" data-id="${i.id}"><i class="fas fa-edit"></i></button><button class="delete-news" data-id="${i.id}"><i class="fas fa-trash-alt"></i></button></div><div class="news-date">${i.date}</div><h4>${i.title}</h4><p>${i.description}</p>`;
+            c.appendChild(d);
+        });
+        document.querySelectorAll('.edit-news').forEach(b => b.addEventListener('click', e => { e.stopPropagation(); const id = parseInt(b.dataset.id); const ni = newsData.find(n => n.id === id); if(ni) { ni.date = prompt("Дата:", ni.date) || ni.date; ni.title = prompt("Заголовок:", ni.title) || ni.title; ni.description = prompt("Описание:", ni.description) || ni.description; ni.link = prompt("Ссылка:", ni.link) || ni.link; renderNews(); } }));
+        document.querySelectorAll('.delete-news').forEach(b => b.addEventListener('click', e => { e.stopPropagation(); if(confirm("Удалить?")) { newsData = newsData.filter(n => n.id !== parseInt(b.dataset.id)); renderNews(); } }));
     }
-    document.getElementById('addNewsBtn')?.addEventListener('click',()=>{let t=prompt("Заголовок:");if(!t)return;let d=prompt("Описание:");let l=prompt("Ссылка:");let dt=prompt("Дата:");if(dt&&t)newsData.push({id:Date.now(),date:dt,title:t,description:d||"",link:l||"#"});renderNews();});
+    document.getElementById('addNewsBtn')?.addEventListener('click', () => { let t = prompt("Заголовок:"); if(!t) return; let d = prompt("Описание:"); let l = prompt("Ссылка:"); let dt = prompt("Дата:"); if(dt && t) newsData.push({ id: Date.now(), date: dt, title: t, description: d || "", link: l || "#" }); renderNews(); });
     renderNews();
 
-    // ========== ФОРМА ЗАЯВКИ ==========
-    const form = document.getElementById('bookingForm');
-    form?.addEventListener('submit', async(e) => {
-        e.preventDefault();
-        const name = document.getElementById('userName').value.trim();
-        const contact = document.getElementById('userContact').value.trim();
-        const msgDiv = document.getElementById('formMessage');
-        if(!name || !contact){ msgDiv.innerHTML='<span style="color:#B26B4E;">Заполните поля</span>'; return; }
-        if(!document.getElementById('consentCheckbox').checked){ msgDiv.innerHTML='<span style="color:#B26B4E;">Требуется согласие на обработку данных</span>'; return; }
-        const success = await sendToTelegram(name, contact);
-        if(success) {
-            msgDiv.innerHTML='<span style="color:#6D8F6B;">✅ Заявка отправлена! Я свяжусь с вами в ближайшее время 💫</span>';
-            form.reset();
-        } else {
-            msgDiv.innerHTML='<span style="color:#B26B4E;">❌ Ошибка отправки. Попробуйте позже или напишите в Telegram.</span>';
-        }
-        setTimeout(() => msgDiv.innerHTML='', 5000);
-    });
+    // Форма записи
+    const bookingForm = document.getElementById('bookingForm');
+    if(bookingForm) {
+        bookingForm.addEventListener('submit', async(e) => {
+            e.preventDefault();
+            const name = document.getElementById('userName').value.trim();
+            const contact = document.getElementById('userContact').value.trim();
+            const msg = document.getElementById('formMessage');
+            if(!name || !contact) { msg.innerHTML = '<span style="color:#B26B4E;">Заполните поля</span>'; return; }
+            if(!document.getElementById('consentCheckbox').checked) { msg.innerHTML = '<span style="color:#B26B4E;">Требуется согласие</span>'; return; }
+            const ok = await sendToTelegram(name, contact);
+            if(ok) { msg.innerHTML = '<span style="color:#6D8F6B;">✅ Заявка отправлена!</span>'; bookingForm.reset(); }
+            else { msg.innerHTML = '<span style="color:#B26B4E;">❌ Ошибка, попробуйте позже</span>'; }
+            setTimeout(() => msg.innerHTML = '', 4000);
+        });
+    }
 
-    // ========== ФОРМА ПОДПИСКИ (ТЕПЕРЬ РАБОТАЕТ) ==========
+    // Форма подписки
     const subForm = document.getElementById('subscribeForm');
-    subForm?.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const email = document.getElementById('subEmail').value.trim();
-        const sm = document.getElementById('subMessage');
-        
-        if(!email || !email.includes('@')) {
-            sm.innerHTML = '<span style="color:#B26B4E;">Введите корректный email</span>';
-            setTimeout(() => sm.innerHTML = '', 3000);
-            return;
-        }
-        
-        const success = await sendSubscriptionToTelegram(email);
-        
-        if(success) {
-            sm.innerHTML = '<span style="color:#6D8F6B;">✅ Подписка оформлена! Ждите письмо.</span>';
-            subForm.reset();
-        } else {
-            sm.innerHTML = '<span style="color:#B26B4E;">❌ Ошибка, попробуйте позже</span>';
-        }
-        setTimeout(() => sm.innerHTML = '', 4000);
-    });
+    if(subForm) {
+        subForm.addEventListener('submit', async(e) => {
+            e.preventDefault();
+            const email = document.getElementById('subEmail').value.trim();
+            const msg = document.getElementById('subMessage');
+            if(!email || !email.includes('@')) { msg.innerHTML = '<span style="color:#B26B4E;">Введите корректный email</span>'; setTimeout(() => msg.innerHTML = '', 3000); return; }
+            const ok = await sendSubscription(email);
+            if(ok) { msg.innerHTML = '<span style="color:#6D8F6B;">✅ Подписка оформлена!</span>'; subForm.reset(); }
+            else { msg.innerHTML = '<span style="color:#B26B4E;">❌ Ошибка, попробуйте позже</span>'; }
+            setTimeout(() => msg.innerHTML = '', 4000);
+        });
+    }
 </script>
 </body>
 </html>
