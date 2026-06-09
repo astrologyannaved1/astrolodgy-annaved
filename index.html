@@ -28,8 +28,12 @@
     gap: 32px;
     margin: 40px 0 60px;
 }
-        .hero-content {
+       .hero-content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
 }
         .hero-content h1 {
     font-size: 3.5rem;
@@ -37,8 +41,23 @@
     margin-bottom: 24px;
     color: #3E3530;
 }
-        .hero-tagline { font-size: 0.85rem; text-transform: uppercase; color: #9B7B5C; margin-bottom: 32px; border-left: 2px solid #D4B88C; padding-left: 18px; }
-        .btn-group { display: flex; flex-wrap: wrap; gap: 18px; }
+        .hero-tagline {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #9B7B5C;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    border-left: none;
+    padding-left: 0;
+}
+        .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 20px;
+}
         .btn { display: inline-flex; align-items: center; gap: 12px; padding: 14px 32px; border-radius: 60px; text-decoration: none; background: white; border: 1px solid #DCC9B0; color: #4C3A2B; font-weight: 600; }
         .btn-primary { background: #D9C6AA; border: none; }
         .hero-image {
@@ -132,13 +151,14 @@
 
 <main>
     <div class="container" style="padding-top: 20px;">
-        <div class="hero">
+       <div class="hero">
     <div class="hero-content">
         <h1>Астро и <br> <span class="highlight">Атмаполезности</span></h1>
+        <div class="hero-image">
+            <img class="yantra-img" src="yantra.png" alt="Шри Янтра">
+        </div>
         <div class="hero-tagline">
-            Астрология как инструмент самопознания и развития.<br>
-            Гармония жизни через призму Джйотиш.<br>
-            Потенциал, кармические задачи, планеты и ваш путь.
+            Астрология как инструмент самопознания и развития. Гармония жизни через призму Джйотиш. Потенциал, кармические задачи, планеты и ваш путь.
         </div>
         <div class="btn-group">
             <a href="#booking" class="btn btn-primary"><i class="fas fa-calendar-alt"></i> Запись на консультацию</a>
@@ -146,12 +166,7 @@
             <a href="https://max.ru/join/Y_lSPbGZfM2ZkGiBObOXZlKks_rYtOSAfijfcPr6oeY" target="_blank" class="btn"><i class="fas fa-link"></i> Канал MAX</a>
         </div>
     </div>
-    <div class="hero-image">
-        <img class="yantra-img" src="yantra.png" alt="Шри Янтра">
-    </div>
 </div>
-    </div>
-
     <div class="section" id="services">
         <div class="container"><h2>Темы консультаций & услуги</h2><div class="services-grid">
             <div class="service-card"><i class="fas fa-star card-icon"></i><h3>Натальная карта</h3><p>Глубокий разбор карты рождения, точки ограничений и способы личностного развития.</p></div>
