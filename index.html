@@ -18,85 +18,71 @@
         .quote-author { text-align: center; font-size: 0.8rem; color: #9C8A76; margin-top: 6px; }
         .anchor-nav { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; padding: 16px 0; }
         .anchor-nav a { text-decoration: none; font-weight: 500; color: #8B6946; }
-       css
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 32px;
-    margin: 40px 0 60px;
-}
-       .hero-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-}
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 32px;
+            margin: 40px 0 60px;
+        }
+        .hero-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
         .hero-content h1 {
-    font-size: 3.5rem;
-    text-align: center;
-    margin-bottom: 24px;
-    color: #3E3530;
-}
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 24px;
+            color: #3E3530;
+        }
         .hero-tagline {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    color: #9B7B5C;
-    text-align: center;
-    max-width: 90%;
-    margin: 0 auto;
-    border-left: none;
-    padding-left: 0;
-}
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: #9B7B5C;
+            text-align: center;
+            max-width: 90%;
+            margin: 0 auto;
+            border-left: none;
+            padding-left: 0;
+        }
         .btn-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-    justify-content: center;
-    margin-top: 20px;
-}
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            justify-content: center;
+            margin-top: 20px;
+        }
         .btn { display: inline-flex; align-items: center; gap: 12px; padding: 14px 32px; border-radius: 60px; text-decoration: none; background: white; border: 1px solid #DCC9B0; color: #4C3A2B; font-weight: 600; }
         .btn-primary { background: #D9C6AA; border: none; }
         .hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #F3EDE4, #EADDCB);
-    border-radius: 48px;
-    padding: 32px 20px;
-    max-width: 340px;
-    width: 90%;
-    margin: 0 auto;
-}
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #F3EDE4, #EADDCB);
+            border-radius: 48px;
+            padding: 32px 20px;
+            max-width: 340px;
+            width: 90%;
+            margin: 0 auto;
+        }
         .yantra-img {
-    max-width: 240px;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-        /* Адаптация для телефонов */
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2.4rem;
-    }
-    .hero-image {
-        padding: 20px;
-        max-width: 280px;
-    }
-    .yantra-img {
-        max-width: 180px;
-    }
-    .hero-tagline {
-        font-size: 0.75rem;
-        text-align: center;
-        border-left: none;
-        padding-left: 0;
-    }
-}
+            max-width: 240px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.4rem; }
+            .hero-image { padding: 20px; max-width: 280px; }
+            .yantra-img { max-width: 180px; }
+            .hero-tagline { font-size: 0.75rem; text-align: center; border-left: none; padding-left: 0; }
+        }
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; margin-top: 20px; }
         .service-card { background: #FFFFFFE6; padding: 32px 24px; border-radius: 32px; border: 1px solid #F2EADF; text-align: center; }
         .service-card .card-icon { font-size: 2.6rem; margin-bottom: 20px; color: #C7A26B; }
@@ -128,33 +114,10 @@
         @media (max-width: 800px) { h2 { font-size: 2rem; } .hero-content h1 { font-size: 2.5rem; } .yantra-img { max-width: 180px; } }
         .highlight { color: #B88952; }
         .offer-note { font-size: 0.7rem; text-align: center; margin-top: 20px; color: #9E8B74; }
-        /* Стили для формы дайджеста */
-.digest-form .form-group {
-    margin-bottom: 16px;
-}
-.digest-form input {
-    width: 100%;
-    padding: 12px 16px;
-    border-radius: 48px;
-    border: 1px solid #E0D2C0;
-    font-family: inherit;
-    font-size: 0.95rem;
-    background: white;
-}
-.digest-form .btn-submit {
-    background: #D9C6AA;
-    border: none;
-    padding: 14px 28px;
-    border-radius: 60px;
-    font-weight: 600;
-    cursor: pointer;
-    width: 100%;
-    font-size: 1rem;
-    transition: 0.2s;
-}
-.digest-form .btn-submit:hover {
-    background: #C9B18A;
-}
+        .digest-form .form-group { margin-bottom: 16px; }
+        .digest-form input { width: 100%; padding: 12px 16px; border-radius: 48px; border: 1px solid #E0D2C0; font-family: inherit; font-size: 0.95rem; background: white; }
+        .digest-form .btn-submit { background: #D9C6AA; border: none; padding: 14px 28px; border-radius: 60px; font-weight: 600; cursor: pointer; width: 100%; font-size: 1rem; transition: 0.2s; }
+        .digest-form .btn-submit:hover { background: #C9B18A; }
     </style>
 </head>
 <body>
@@ -178,69 +141,80 @@
 
 <main>
     <div class="container" style="padding-top: 20px;">
-       <div class="hero">
-    <div class="hero-content">
-        <h1>Астро и <br> <span class="highlight">Атмаполезности</span></h1>
-        <div class="hero-image">
-            <img class="yantra-img" src="yantra.png" alt="Шри Янтра">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Астро и <br> <span class="highlight">Атмаполезности</span></h1>
+                <div class="hero-image">
+                    <img class="yantra-img" src="yantra.png" alt="Шри Янтра">
+                </div>
+                <div class="hero-tagline">
+                    Астрология как инструмент самопознания и развития. Гармония жизни через призму Джйотиш. Потенциал, кармические задачи, планеты и ваш путь.
+                </div>
+                <div class="btn-group">
+                    <a href="#booking" class="btn btn-primary"><i class="fas fa-calendar-alt"></i> Запись на консультацию</a>
+                    <a href="https://t.me/AstrovedAnnaA" target="_blank" class="btn"><i class="fab fa-telegram"></i> Telegram</a>
+                    <a href="https://max.ru/join/Y_lSPbGZfM2ZkGiBObOXZlKks_rYtOSAfijfcPr6oeY" target="_blank" class="btn"><i class="fas fa-link"></i> Канал MAX</a>
+                </div>
+            </div>
         </div>
-        <div class="hero-tagline">
-            Астрология как инструмент самопознания и развития. Гармония жизни через призму Джйотиш. Потенциал, кармические задачи, планеты и ваш путь.
-        </div>
-        <div class="btn-group">
-            <a href="#booking" class="btn btn-primary"><i class="fas fa-calendar-alt"></i> Запись на консультацию</a>
-            <a href="https://t.me/AstrovedAnnaA" target="_blank" class="btn"><i class="fab fa-telegram"></i> Telegram</a>
-            <a href="https://max.ru/join/Y_lSPbGZfM2ZkGiBObOXZlKks_rYtOSAfijfcPr6oeY" target="_blank" class="btn"><i class="fas fa-link"></i> Канал MAX</a>
-        </div>
-    </div>
-</div>
+    </div> <!-- закрыт контейнер -->
+
     <div class="section" id="services">
-        <div class="container"><h2>Темы консультаций & услуги</h2><div class="services-grid">
-            <div class="service-card"><i class="fas fa-star card-icon"></i><h3>Натальная карта</h3><p>Глубокий разбор карты рождения, точки ограничений и способы личностного развития.</p></div>
-            <div class="service-card"><i class="fas fa-leaf card-icon"></i><h3>Особенности здоровья</h3><p>Аюрведа + планеты: потенциал здоровья.</p></div>
-            <div class="service-card"><i class="fas fa-hand-peace card-icon"></i><h3>Денежный путь</h3><p>Анализ домов богатства, периодов (даш) и усиление финансовой энергии.</p></div>
-            <div class="service-card"><i class="fas fa-heart card-icon"></i><h3>Совместимость и личная жизнь</h3><p>Парные отношения, кармические узы.</p></div>
-            <div class="service-card"><i class="fas fa-gem card-icon"></i><h3>Подбор камней и мантр</h3><p>Рекомендации ведических коррекций.</p></div>
-            <div class="service-card"><i class="fas fa-calendar-check card-icon"></i><h3>Мухурта</h3><p>Подбор благоприятного времени.</p></div>
-            <div class="service-card"><i class="fas fa-baby-carriage card-icon"></i><h3>Потенциал ребенка</h3><p>Детская карта: таланты, потенциал, зоны роста.</p></div>
-            <div class="service-card"><i class="fas fa-hourglass-half card-icon"></i><h3>Прашна</h3><p>Метод астрологии для получения ответа на конкретный вопрос.</p></div>
-        </div></div>
+        <div class="container">
+            <h2>Темы консультаций & услуги</h2>
+            <div class="services-grid">
+                <div class="service-card"><i class="fas fa-star card-icon"></i><h3>Натальная карта</h3><p>Глубокий разбор карты рождения, точки ограничений и способы личностного развития.</p></div>
+                <div class="service-card"><i class="fas fa-leaf card-icon"></i><h3>Особенности здоровья</h3><p>Аюрведа + планеты: потенциал здоровья.</p></div>
+                <div class="service-card"><i class="fas fa-hand-peace card-icon"></i><h3>Денежный путь</h3><p>Анализ домов богатства, периодов (даш) и усиление финансовой энергии.</p></div>
+                <div class="service-card"><i class="fas fa-heart card-icon"></i><h3>Совместимость и личная жизнь</h3><p>Парные отношения, кармические узы.</p></div>
+                <div class="service-card"><i class="fas fa-gem card-icon"></i><h3>Подбор камней и мантр</h3><p>Рекомендации ведических коррекций.</p></div>
+                <div class="service-card"><i class="fas fa-calendar-check card-icon"></i><h3>Мухурта</h3><p>Подбор благоприятного времени.</p></div>
+                <div class="service-card"><i class="fas fa-baby-carriage card-icon"></i><h3>Потенциал ребенка</h3><p>Детская карта: таланты, потенциал, зоны роста.</p></div>
+                <div class="service-card"><i class="fas fa-hourglass-half card-icon"></i><h3>Прашна</h3><p>Метод астрологии для получения ответа на конкретный вопрос.</p></div>
+            </div>
+        </div>
     </div>
 
     <div class="section" id="about">
         <div class="container about-grid">
-            <div class="about-text"><h2>Обо мне</h2>
-<p>Здравствуйте, я Анна — практик ведической астрологии (Джйотиш) с 4-летним опытом и инициированный Атма-крийя йог. Изучала астрологию в традициях: "Парашары, Джаймини, Таджика, Нади-астрологии, К.Н.Рао" под руководством таких известных астрологов как Ирина Чайка, Василий Тушкин, Анна Пицхелаури.</p>
-<p>Мои консультации опираются на классические тексты: "Брихат Парашара Хора Шастра", "Джаймини сутры" и иные авторитетные ведические тексты. Помогаю увидеть саму суть событий, освободиться от иллюзий и грамотно прожить периоды планет.</p>
-<p>Основные принципы: экологичность, глубокая эмпатия и практическая помощь. Вместе исследуем Ваш потенциал, ограничения, зоны роста и создадим гармонию в настоящем.</p>
-<div class="about-sign">— Ведический астролог, Анна Акимова.</div>
-            <div style="text-align:center;"><i class="fas fa-lotus" style="font-size: 6rem; color: #DBC7A8;"></i><div style="background:#F0E5D9; border-radius:100px; padding:8px 20px; margin-top:20px;">ॐ गं गणपतये नमः</div></div>
+            <div class="about-text">
+                <h2>Обо мне</h2>
+                <p>Здравствуйте, я Анна — практик ведической астрологии (Джйотиш) с 4-летним опытом и инициированный Атма-крийя йог. Изучала астрологию в традициях: "Парашары, Джаймини, Таджика, Нади-астрологии, К.Н.Рао" под руководством таких известных астрологов как Ирина Чайка, Василий Тушкин, Анна Пицхелаури.</p>
+                <p>Мои консультации опираются на классические тексты: "Брихат Парашара Хора Шастра", "Джаймини сутры" и иные авторитетные ведические тексты. Помогаю увидеть саму суть событий, освободиться от иллюзий и грамотно прожить периоды планет.</p>
+                <p>Основные принципы: экологичность, глубокая эмпатия и практическая помощь. Вместе исследуем Ваш потенциал, ограничения, зоны роста и создадим гармонию в настоящем.</p>
+                <div class="about-sign">— Ведический астролог, Анна Акимова.</div>
+            </div>
+            <div style="text-align:center;">
+                <i class="fas fa-lotus" style="font-size: 6rem; color: #DBC7A8;"></i>
+                <div style="background:#F0E5D9; border-radius:100px; padding:8px 20px; margin-top:20px;">ॐ गं गणपतये नमः</div>
+            </div>
         </div>
-    </div>
+    </div> <!-- закрыт about -->
 
     <div class="section" id="great-people">
-        <div class="container"><h2><i class="fas fa-globe"></i> Астрология в жизни великих</h2>
-<div class="great-people-grid">
-    <div class="great-card">
-        <h3>А.Л. Чижевский</h3>
-        <p>Советский учёный, биофизик, один из основоположников космического естествознания и космической экологии.</p>
-        <div class="quote">«Кто отрицает влияние звёзд, тот отрицает мудрость и противоречит самому явному опыту».</div>
-    </div>
-    <div class="great-card">
-        <h3>Тони Нейдер</h3>
-        <p>Доктор философии, доктор медицинских наук, профессор, который внёс значительный вклад в изучение связи между физиологией человека и принципами астрологии, в частности ведической (Джйотиш). Исследовал человеческую физиологию как отражение космоса и выявил системные параллели между структурами мозга и принципами астрологии.</p>
-    </div>
-    <div class="great-card">
-        <h3>К.Г. Юнг</h3>
-        <p>Основатель аналитической психологии. Ключевые идеи об астрологии: астрология как архетипическая карта души; астрологические образы как диагностические инструменты; астрологические принципы для анализа культурных и исторических изменений — связь смены астрологических эпох (например, переход от эпохи Рыб к эпохе Водолея) с эволюцией доминантных архетипов в коллективной психике человечества.</p>
-        <div class="quote">«Астрологическая карта может дать более или менее полную картину характера личности… выявить психологические конфликты и задачи души».</div>
-    </div>
-    <div class="great-card">
-        <h3>Альберт Эйнштейн</h3>
-        <p>Физик-теоретик, лауреат Нобелевской премии.</p>
-        <div class="quote">«Астрология — самостоятельная наука, очень многое объясняющая. Знакомство с нею поучительно, и я неоднократно с пользой для себя к ней обращался».</div>
-    </div>
-</div>
+        <div class="container">
+            <h2><i class="fas fa-globe"></i> Астрология в жизни великих</h2>
+            <div class="great-people-grid">
+                <div class="great-card">
+                    <h3>А.Л. Чижевский</h3>
+                    <p>Советский учёный, биофизик, один из основоположников космического естествознания и космической экологии.</p>
+                    <div class="quote">«Кто отрицает влияние звёзд, тот отрицает мудрость и противоречит самому явному опыту».</div>
+                </div>
+                <div class="great-card">
+                    <h3>Тони Нейдер</h3>
+                    <p>Доктор философии, доктор медицинских наук, профессор, который внёс значительный вклад в изучение связи между физиологией человека и принципами астрологии, в частности ведической (Джйотиш). Исследовал человеческую физиологию как отражение космоса и выявил системные параллели между структурами мозга и принципами астрологии.</p>
+                </div>
+                <div class="great-card">
+                    <h3>К.Г. Юнг</h3>
+                    <p>Основатель аналитической психологии. Ключевые идеи об астрологии: астрология как архетипическая карта души; астрологические образы как диагностические инструменты; астрологические принципы для анализа культурных и исторических изменений — связь смены астрологических эпох (например, переход от эпохи Рыб к эпохе Водолея) с эволюцией доминантных архетипов в коллективной психике человечества.</p>
+                    <div class="quote">«Астрологическая карта может дать более или менее полную картину характера личности… выявить психологические конфликты и задачи души».</div>
+                </div>
+                <div class="great-card">
+                    <h3>Альберт Эйнштейн</h3>
+                    <p>Физик-теоретик, лауреат Нобелевской премии.</p>
+                    <div class="quote">«Астрология — самостоятельная наука, очень многое объясняющая. Знакомство с нею поучительно, и я неоднократно с пользой для себя к ней обращался».</div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -252,24 +226,25 @@
     </div>
 
     <div class="section" id="reviews">
-        <div class="container"><h2><i class="fas fa-comment-dots"></i> Отзывы клиентов</h2>
-<div class="reviews-grid">
-    <div class="service-card">
-        <i class="fas fa-star" style="color:#D4B88C;"></i>
-        <p style="margin-top:12px;">“Анна помогла разобраться в кармических задачах и найти новый путь. Консультация очень глубокая, благодарю!”</p>
-        <strong>— Елена</strong>
-    </div>
-    <div class="service-card">
-        <i class="fas fa-star" style="color:#D4B88C;"></i>
-        <p style="margin-top:12px;">“Благодаря Мухурте выбрали идеальную дату свадьбы. Всё сложилось гармонично.”</p>
-        <strong>— Сергей и Мария</strong>
-    </div>
-    <div class="service-card">
-        <i class="fas fa-star" style="color:#D4B88C;"></i>
-        <p style="margin-top:12px;">“Разбор натальной карты превзошёл ожидания. Анна указала на точки роста, которые я раньше не замечала.”</p>
-        <strong>— Татьяна</strong>
-    </div>
-</div>
+        <div class="container">
+            <h2><i class="fas fa-comment-dots"></i> Отзывы клиентов</h2>
+            <div class="reviews-grid">
+                <div class="service-card">
+                    <i class="fas fa-star" style="color:#D4B88C;"></i>
+                    <p style="margin-top:12px;">“Анна помогла разобраться в кармических задачах и найти новый путь. Консультация очень глубокая, благодарю!”</p>
+                    <strong>— Елена</strong>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-star" style="color:#D4B88C;"></i>
+                    <p style="margin-top:12px;">“Благодаря Мухурте выбрали идеальную дату свадьбы. Всё сложилось гармонично.”</p>
+                    <strong>— Сергей и Мария</strong>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-star" style="color:#D4B88C;"></i>
+                    <p style="margin-top:12px;">“Разбор натальной карты превзошёл ожидания. Анна указала на точки роста, которые я раньше не замечала.”</p>
+                    <strong>— Татьяна</strong>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -294,25 +269,20 @@
                         <button type="submit" class="btn-submit">Отправить заявку ➤</button>
                         <div id="formMessage" style="margin-top:15px;"></div>
                     </form>
+                </div>
                 <div class="booking-card" style="margin-top:28px;">
-    <h3><i class="fas fa-envelope"></i> Ведический дайджест</h3>
-    <p style="font-size: 0.95rem; color: #5F554B; margin-bottom: 20px;">
-        Бесплатный лунный календарь, мантры, астропрогнозы на почту
-    </p>
-    <form id="subscribeForm" class="digest-form">
-        <div class="form-group">
-            <input type="text" id="subName" placeholder="Ваше имя" required>
-        </div>
-        <div class="form-group">
-            <input type="tel" id="subPhone" placeholder="Номер телефона" required>
-        </div>
-        <div class="form-group">
-            <input type="email" id="subEmail" placeholder="Ваш email" required>
-        </div>
-        <button type="submit" class="btn-submit">Получить</button>
-        <div id="subMessage" style="margin-top:12px; font-size: 0.9rem;"></div>
-    </form>
-</div>
+                    <h3><i class="fas fa-envelope"></i> Ведический дайджест</h3>
+                    <p style="font-size: 0.95rem; color: #5F554B; margin-bottom: 20px;">
+                        Бесплатный лунный календарь, мантры, астропрогнозы на почту
+                    </p>
+                    <form id="subscribeForm" class="digest-form">
+                        <div class="form-group"><input type="text" id="subName" placeholder="Ваше имя" required></div>
+                        <div class="form-group"><input type="tel" id="subPhone" placeholder="Номер телефона" required></div>
+                        <div class="form-group"><input type="email" id="subEmail" placeholder="Ваш email" required></div>
+                        <button type="submit" class="btn-submit">Получить</button>
+                        <div id="subMessage" style="margin-top:12px; font-size: 0.9rem;"></div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -328,12 +298,9 @@
 <a href="https://t.me/AstrovedAnnaA" class="floating-telegram" target="_blank"><i class="fab fa-telegram"></i></a>
 
 <script>
-    // ========== ВАШИ ДАННЫЕ (ТОКЕН И CHAT ID) ==========
     const BOT_TOKEN = '8797729463:AAFezQNnDeUJDaGBvK0S0G9IWm059iPs1ns';
     const CHAT_ID = '1651374624';
-    // ===================================================
 
-    // Функция отправки заявки в Telegram
     async function sendToTelegram(name, contact) {
         const text = `🔮 НОВАЯ ЗАЯВКА НА КОНСУЛЬТАЦИЮ 🔮\n\nИмя: ${name}\nКонтакт: ${contact}`;
         try {
@@ -346,7 +313,7 @@
             return data.ok === true;
         } catch(e) { return false; }
     }
-    // ========== НОВОСТИ (три зафиксированные новости, без кнопки добавления) ==========
+
     const newsData = [
         { date: "19.04.26", title: "Акшая Тритья. Время начать.", description: "Самый мощный день в году. Время шагнуть. Нажмите для перехода в канал.", link: "https://t.me/AstrovedAnnaA/223" },
         { date: "20.04.26", title: "Время шагнуть", description: "Энергия обновления. Специальный разбор ведических ритуалов.", link: "https://t.me/AstrovedAnnaA/223" },
@@ -360,16 +327,13 @@
         newsData.forEach(item => {
             const newsDiv = document.createElement('div');
             newsDiv.className = 'news-item';
-            newsDiv.addEventListener('click', () => {
-                if (item.link) window.open(item.link, '_blank');
-            });
+            newsDiv.addEventListener('click', () => { if (item.link) window.open(item.link, '_blank'); });
             newsDiv.innerHTML = `<div class="news-date">${item.date}</div><h4>${item.title}</h4><p>${item.description}</p>`;
             container.appendChild(newsDiv);
         });
     }
     renderNews();
 
-    // ========== ФОРМА ЗАПИСИ ==========
     const bookingForm = document.getElementById('bookingForm');
     if (bookingForm) {
         bookingForm.addEventListener('submit', async (e) => {
@@ -377,67 +341,53 @@
             const name = document.getElementById('userName').value.trim();
             const contact = document.getElementById('userContact').value.trim();
             const msg = document.getElementById('formMessage');
-            if (!name || !contact) {
-                msg.innerHTML = '<span style="color:#B26B4E;">Заполните поля</span>';
-                return;
-            }
-            if (!document.getElementById('consentCheckbox').checked) {
-                msg.innerHTML = '<span style="color:#B26B4E;">Требуется согласие</span>';
-                return;
-            }
+            if (!name || !contact) { msg.innerHTML = '<span style="color:#B26B4E;">Заполните поля</span>'; return; }
+            if (!document.getElementById('consentCheckbox').checked) { msg.innerHTML = '<span style="color:#B26B4E;">Требуется согласие</span>'; return; }
             const ok = await sendToTelegram(name, contact);
-            if (ok) {
-                msg.innerHTML = '<span style="color:#6D8F6B;">✅ Заявка отправлена!</span>';
-                bookingForm.reset();
-            } else {
-                msg.innerHTML = '<span style="color:#B26B4E;">❌ Ошибка, попробуйте позже</span>';
-            }
+            if (ok) { msg.innerHTML = '<span style="color:#6D8F6B;">✅ Заявка отправлена!</span>'; bookingForm.reset(); }
+            else { msg.innerHTML = '<span style="color:#B26B4E;">❌ Ошибка, попробуйте позже</span>'; }
             setTimeout(() => msg.innerHTML = '', 4000);
         });
     }
 
-    // ========== ФОРМА ПОДПИСКИ (Ведический дайджест) ==========
-const subForm = document.getElementById('subscribeForm');
-if (subForm) {
-    subForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const name = document.getElementById('subName').value.trim();
-        const phone = document.getElementById('subPhone').value.trim();
-        const email = document.getElementById('subEmail').value.trim();
-        const msg = document.getElementById('subMessage');
-        
-        if (!name || !phone || !email) {
-            msg.innerHTML = '<span style="color:#B26B4E;">Пожалуйста, заполните все поля</span>';
-            setTimeout(() => msg.innerHTML = '', 3000);
-            return;
-        }
-        if (!email.includes('@')) {
-            msg.innerHTML = '<span style="color:#B26B4E;">Введите корректный email</span>';
-            setTimeout(() => msg.innerHTML = '', 3000);
-            return;
-        }
-        
-        // Отправляем данные в Telegram
-        const text = `📧 НОВАЯ ПОДПИСКА НА ДАЙДЖЕСТ 📧\n\nИмя: ${name}\nТелефон: ${phone}\nEmail: ${email}`;
-        try {
-            const res = await fetch(`https://corsproxy.io/?url=https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ chat_id: CHAT_ID, text: text })
-            });
-            const data = await res.json();
-            if (data.ok) {
-                msg.innerHTML = '<span style="color:#6D8F6B;">✅ Спасибо! Ваши данные получены. Ждите письмо.</span>';
-                subForm.reset();
-            } else {
-                msg.innerHTML = '<span style="color:#B26B4E;">❌ Ошибка, попробуйте позже</span>';
+    const subForm = document.getElementById('subscribeForm');
+    if (subForm) {
+        subForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = document.getElementById('subName').value.trim();
+            const phone = document.getElementById('subPhone').value.trim();
+            const email = document.getElementById('subEmail').value.trim();
+            const msg = document.getElementById('subMessage');
+            if (!name || !phone || !email) {
+                msg.innerHTML = '<span style="color:#B26B4E;">Пожалуйста, заполните все поля</span>';
+                setTimeout(() => msg.innerHTML = '', 3000);
+                return;
             }
-        } catch(e) {
-            msg.innerHTML = '<span style="color:#B26B4E;">❌ Ошибка отправки</span>';
-        }
-        setTimeout(() => msg.innerHTML = '', 5000);
-    });
-}
+            if (!email.includes('@')) {
+                msg.innerHTML = '<span style="color:#B26B4E;">Введите корректный email</span>';
+                setTimeout(() => msg.innerHTML = '', 3000);
+                return;
+            }
+            const text = `📧 НОВАЯ ПОДПИСКА НА ДАЙДЖЕСТ 📧\n\nИмя: ${name}\nТелефон: ${phone}\nEmail: ${email}`;
+            try {
+                const res = await fetch(`https://corsproxy.io/?url=https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ chat_id: CHAT_ID, text: text })
+                });
+                const data = await res.json();
+                if (data.ok) {
+                    msg.innerHTML = '<span style="color:#6D8F6B;">✅ Спасибо! Ваши данные получены. Ждите письмо.</span>';
+                    subForm.reset();
+                } else {
+                    msg.innerHTML = '<span style="color:#B26B4E;">❌ Ошибка, попробуйте позже</span>';
+                }
+            } catch(e) {
+                msg.innerHTML = '<span style="color:#B26B4E;">❌ Ошибка отправки</span>';
+            }
+            setTimeout(() => msg.innerHTML = '', 5000);
+        });
+    }
 </script>
 </body>
 </html>
